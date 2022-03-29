@@ -6,19 +6,85 @@
 </head>
 <body>
 <script>
-    let obj = undefined
+    // let obj = undefined
+    //
+    // if (obj){
+    //     console.log('start')
+    //
+    // }
+    //
+    //
+    // console.log(parseInt('123abc',10))
+    //
+    // let str = 'abc'
+    //
+    // console.log(str.length)
 
-    if (obj){
-        console.log('start')
-
-    }
+    // const s = Symbol.for('abc')
+    // console.log(Symbol.keyFor(s))
 
 
-    console.log(parseInt('123abc',10))
+    // let s1 = Symbol('我是s1')
+    //
+    // [s1] = '123'
+    // console.log([s1])
+    // let obj = {
+    //     name:'suemor',
+    //     age:18,
+    //     [s1] : '哈哈哈'
+    // }
 
-    let str = 'abc'
+    // let s1 = Symbol('foo'),
+    //     s2 = Symbol('bar')
+    //
+    //
+    //
+    // const obj = {
+    //     [s1]: 'foo val',
+    //     [s2]: 'bar val',
+    //     baz: 'baz val',
+    //     qux: 'qux val'
+    // }
+    //
+    // console.log(Object.getOwnPropertySymbols(obj))
+    //
+    // console.log(Object.getOwnPropertyNames(obj))
+    //
+    // console.log(Object.getOwnPropertyDescriptors(obj))
+    //
+    // console.log(Reflect.ownKeys(obj))
 
-    console.log(str.length)
+    // let o = {
+    //     [Symbol('foo')]: 'foo val',
+    //     [Symbol('bar')]: 'bar val'
+    // };
+    //
+    // let barSymbol = Object.getOwnPropertySymbols(o).find((symbol) => symbol.toString().match(/bar/));
+    //
+    // console.log(barSymbol);
+    //
+    // class Foo {
+    //     async *[Symbol.asyncIterator]() {
+    //
+    //     }
+    // }
+    //
+    //
+    // let f = new Foo();
+    //
+    // console.log(f[Symbol.asyncIterator]());
+
+    // const obj = {
+    //     name:'suemor',
+    //     age:19
+    // }
+    //
+    // for (const index in obj){
+    //     console.log(index)
+    // }
+
+    const num = new Number()
+    console.log(num.__proto__)
 </script>
 </body>
 </html>
