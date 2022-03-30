@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // console.log(Array.of(1,2,3,4,5))
+    // const arr = ['a','b']
+    // arr[3] = 'd'
+    // for (const item of arr){
+    //     console.log(item)
+    // }
+    //
+    // console.log(Array.isArray(arr))
+
+    // const a = ["foo", "bar", "baz", "qux"];
+    //
+    // // for (const [key,value] of a.entries()){
+    // //     console.log(key,value)
+    // // }
+    //
+    // a.push('suemor')
+    // a.pop()
+    // a.shift()
+    // a.unshift('suemor')
+    //
+    // const arr = [2,3,4,12,43,54,12,43,2,2,1]
+    // // arr.sort((v1,v2) => v1 - v2)
+    // // console.log(   arr)
+    //
+    // // console.log(arr.includes(13))
+    // // console.log(arr.forEach(item => item >40))
+    // console.log(arr.map(item => item * 2))
+    // const m1 = new Map([
+    //
+    //     ["key1", "val1"],
+    //
+    //     ["key2", "val2"],
+    //
+    //     ["key3", "val3"]]);
+    // alert(m1.size); // 3
+
+
+    const map = new Map()
+    map.set('name','suemor').set('age',17)
+
+
+    // for (const item of map.entries()){
+    //     console.log(item)
+    // }
+
+
+    // console.log([...map])
+
+    const str = ['a','b','suemor']
+    const iter = str[Symbol.iterator]()
+
+    console.log(iter.next())
+    console.log(iter.next())
+    console.log(iter.next())
+    console.log(iter.next())
+</script>
+</body>
+</html>

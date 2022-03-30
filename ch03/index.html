@@ -83,8 +83,33 @@
     //     console.log(index)
     // }
 
-    const num = new Number()
-    console.log(num.__proto__)
+
+    // const obj = Object.freeze({
+    //     name:'suemor',
+    //     age:'12'
+    // })
+    // obj.name = 'suem'
+    // console.log(obj)
+
+
+    // function Article() { this.title = 'Inauguration Ceremony Features Kazoo Band'; this.author = 'Jake'; }
+    //
+    // let a1 = new Article(); let a2 = new Article();
+    //
+    // delete a1.author;
+    //
+    // console.log(a1.author)
+
+    let start =  Date.now()
+
+    ;(function f() {
+        for (let i = 0; i < 100000000; i++) {
+            let ab = i
+        }
+    })()
+
+    let stop =  Date.now()
+    console.log(stop - start)
 </script>
 </body>
 </html>
