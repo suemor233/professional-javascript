@@ -5,86 +5,283 @@
     <title>Title</title>
 </head>
 <body>
-    <script>
-        // const person = {
-        //     _name : 'suemor'
-        // }
-        // Object.defineProperty(person,'name',{
-        //     get() {
-        //         return this._name
-        //     },
-        //
-        // })
-        //
-        // person.name = '123'
-        //
-        // console.log(person.name)
+<script>
+    // const person = {
+    //     _name : 'suemor'
+    // }
+    // Object.defineProperty(person,'name',{
+    //     get() {
+    //         return this._name
+    //     },
+    //
+    // })
+    //
+    // person.name = '123'
+    //
+    // console.log(person.name)
 
-       //  const person = {}
-       //
-       //  Object.defineProperties(person,{
-       //      name:{
-       //          value:'suemor'
-       //      },
-       //      age:{
-       //          value:17
-       //      },
-       //      sex:{
-       //          value:'mtf'
-       //      },
-       //
-       //  })
-       //
-       //  const person2 = {
-       //      name2: 'suemor2',
-       //      say(){
-       //          console.log(this.name2)
-       //      },
-       //      get name2(){
-       //          return this.name
-       //      },
-       //      set name2(val){
-       //          console.log('不许改！')
-       //      }
-       //  }
-       //
-       //  // const person3 = Object.assign(person,person2)
-       //  // console.log(person3)
-       //
-       // person2.name2 = '123'
-       //
-       //  console.log(person2.name2)
-
-
-        // const person3 = {
-        //     name:'suemor',
-        //     age:19,
-        //     user:{
-        //         username:'xiaojie',
-        //         password:'123456'
-        //     }
-        // }
-
-        // const {name,age,sex='mtf'} = person3
-        //
-        // console.log(sex)
-        //
-        // const {length} = 'suemor'
-
-        // let { constructor: c } = 4;
-        // console.log(c)
-        // console.log(c === Number);
+    //  const person = {}
+    //
+    //  Object.defineProperties(person,{
+    //      name:{
+    //          value:'suemor'
+    //      },
+    //      age:{
+    //          value:17
+    //      },
+    //      sex:{
+    //          value:'mtf'
+    //      },
+    //
+    //  })
+    //
+    //  const person2 = {
+    //      name2: 'suemor2',
+    //      say(){
+    //          console.log(this.name2)
+    //      },
+    //      get name2(){
+    //          return this.name
+    //      },
+    //      set name2(val){
+    //          console.log('不许改！')
+    //      }
+    //  }
+    //
+    //  // const person3 = Object.assign(person,person2)
+    //  // console.log(person3)
+    //
+    // person2.name2 = '123'
+    //
+    //  console.log(person2.name2)
 
 
-        // let PName
-        //
-        // ({name:PName} = person3)
-        //
-        // console.log(PName)
+    // const person3 = {
+    //     name:'suemor',
+    //     age:19,
+    //     user:{
+    //         username:'xiaojie',
+    //         password:'123456'
+    //     }
+    // }
 
-        // const {user:{username}} = person3
-        //
-        // console.log(username)
-    </script>
+    // const {name,age,sex='mtf'} = person3
+    //
+    // console.log(sex)
+    //
+    // const {length} = 'suemor'
+
+    // let { constructor: c } = 4;
+    // console.log(c)
+    // console.log(c === Number);
+
+
+    // let PName
+    //
+    // ({name:PName} = person3)
+    //
+    // console.log(PName)
+
+    // const {user:{username}} = person3
+    //
+    // console.log(username)
+    //
+    // function Person() {
+    //     const obj = new Object()
+    //     obj.name = 'suemor'
+    //     obj.age  = 19
+    //     return obj
+    // }
+    //
+    //
+    // const p1 = Person()
+    //
+    // console.log(p1.name)
+
+    // function Person2(sex) {
+    //     this.name = 'suemor'
+    //     this.age = 18
+    //     this.sex = sex
+    // }
+
+    // // const p2 = new Person2()
+    // // console.log(p2.name)
+    //
+    // function Person3() {
+    //
+    // }
+    //
+    // const p3 = new Person3()
+    //
+    // Person2.apply(p3)
+    //
+    // console.log(p3.name)
+
+    // let p2 = new
+    // let p2 = new Person2.prototype.constructor('sex')
+    // // Object.getPrototypeOf(Person2.prototype).constructor()
+    //
+    // // console.log(Person2.prototype.isPrototypeOf(p2))
+    //
+    //
+    // console.log(p2.name)
+
+    // const p2 = new Person2('mtf')
+    // Person2.prototype.height = 160
+    //
+    // p2.height = 12
+    // console.log(p2.hasOwnProperty('height'))
+    //
+    // function getArr(m,n) {
+    //     return new Array(m).fill(n)
+    // }
+    //
+    // console.log(getArr(5,'a'))
+
+    // console.log(Person2.prototype)
+
+
+    // function Person() {}
+    //
+    // let friend = new Person(); Person.prototype = { constructor: Person, name: "Nicholas", age: 29, job: "Software Engineer", sayName() { console.log(this.name); } };
+    //
+    // friend.sayName();
+
+    // function SuperType() {
+    //     this.property = true;
+    // }
+    //
+    // SuperType.prototype.getSuperValue = function () {
+    //     return this.property;
+    // };
+    //
+    // function SubType() {
+    //     this.subproperty = false;
+    // }
+    //
+    // SubType.prototype = new SuperType()
+    //
+    //
+    // SubType.prototype.getSubValue = function () {
+    //     return this.subproperty;
+    // };
+    //
+    // let instance = new SubType();
+    // console.log(instance.getSuperValue()); // true
+
+    // function SuperType() {
+    //     this.color = ['red','blue']
+    // }
+    //
+    // // SuperType.prototype.name = 'suemor'
+    //
+    // function SubType() {
+    //     SuperType.apply(this)
+    // }
+
+    // SubType.prototype = new SuperType()
+    //
+    //
+    // const sub  = new SubType()
+    // sub.color.push('green')
+    // console.log(sub.color)
+    //
+    // const sub2  = new SubType()
+    // console.log(sub2.name)
+    // const ob = Object.create(SuperType)
+    // console.log(ob.color)
+
+    // function createAnother(original) {
+    //     let clone = object(original);
+    //     clone.sayHi = function () {
+    //         console.log("hi");
+    //     };
+    //     return clone;
+    // }
+
+    function Super() {
+        this.name = 'suemor'
+        this.color = ['red','yellow']
+    }
+
+    function Sub(age) {
+        Super.apply(this)
+        this.age = age
+    }
+
+    // if (!Object.create2){
+    //     Object.create2 = function (pro){
+    //         function Fn() {
+    //
+    //         }
+    //         Fn.prototype = pro
+    //         return new Fn()
+    //
+    //     }
+    // }
+    //
+    //
+    // Sub.prototype = Object.create2(Super.prototype)
+
+    // ;(function (){
+    //     function Fn() {}
+    //     Fn.prototype = Super.prototype
+    //
+    //     Sub.prototype = new Fn()
+    // })()
+    //
+    // Sub.prototype.constructor = Sub
+    // const sub1 = new Sub()
+    // const sub2 = new Sub()
+    // console.log(sub1.name)
+    // sub1.color.push('green')
+    // console.log(sub2.color)
+
+
+    // class Person {
+    //     constructor() {
+    //         this.name = 'suemor'
+    //     }
+    // }
+    //
+    // const p = new Person()
+    // console.log(p.constructor)
+
+
+    // const p = new class person {
+    //    constructor(name) {
+    //        this.name = name
+    //    }
+    //    say(){
+    //        console.log(this.name)
+    //    }
+    //    get getName(){
+    //        return this.name
+    //    }
+    //
+    //    set setName(name){
+    //        this.name = name
+    //    }
+    // }('suemor')
+    //
+    //
+    // p.setName = 'ssss'
+    // console.log(p.getName)
+
+    class Person {
+        constructor() {
+            this.name = 'suemor'
+        }
+
+        static create(){
+            return new Person()
+        }
+    }
+
+    const p = Person.create()
+    p.name  = 's'
+    console.log()
+
+</script>
 </body>
 </html>
