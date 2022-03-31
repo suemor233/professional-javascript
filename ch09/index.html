@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        // const target = {
+        //     name:'suemor',
+        //     age: 18
+        // }
+        //
+        // const handler = {
+        //     get:Reflect.get
+        // }
+        //
+        // const proxy = new Proxy(target,handler)
+        // console.log(proxy.name)
+
+        // const o = {};
+        //
+        // if(Reflect.defineProperty(o, 'foo', {value: 'bar'})) { console.log('success'); } else {
+        //
+        //     console.log('failure'); }
+
+
+        // const handler = {
+        //     get:function (target,name) {
+        //         if (target.hasOwnProperty(name)){
+        //             console.log(target,name)
+        //             return target[name]
+        //         }else {
+        //             console.log('error')
+        //             return undefined
+        //         }
+        //     },
+        //     set:function (target,name,value){
+        //         target[name] = '不可以修改！'
+        //     },
+        //     deleteProperty(target, p) {
+        //         console.log('you cant delete this value')
+        //     }
+        // }
+        //
+        // const proxy = new Proxy({},handler)
+        // proxy.name = 'suemor'
+        // delete proxy.name
+        // console.log(proxy.name)
+
+        // const obj = {
+        //     name:'suemor'
+        // }
+        //
+        // console.log(Reflect.get(obj,'name'))
+
+        const star = {
+            name:'suemor',
+            age: 18,
+            phoneNumber:'133333333'
+        }
+
+
+
+
+        const proxy = new Proxy(star,{
+            get:function (target, p, receiver) {
+                if (p === 'phoneNumber'){
+                    return '1234566'
+                }else {
+                    re
+                    return target[p]
+                }
+            }
+        })
+
+        // console.log(Reflect.has(star,'age'))
+
+
+        class Person {
+            constructor() {
+                this.name = 'suemor'
+            }
+        }
+
+
+        class Person2 {
+            constructor() {
+
+            }
+        }
+        // const person = Reflect.construct(Person,['suemor'])
+        // console.log(person.name)
+
+
+
+        const p1 = new Person()
+        const p2 = new Person2()
+
+        Reflect.apply(p1,p2,[])
+
+        console.log(p2)
+    </script>
+</body>
+</html>
