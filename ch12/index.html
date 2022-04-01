@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<!--    <div>-->
+<!--        <span>你好</span>-->
+<!--        <input type="text">-->
+<!--    </div>-->
+
+<div style="background-color: orange">
+    <p>点我1</p>
+    <p>点我2</p>
+    <p>点我3</p>
+    <p>点我4</p>
+    <p>点我5</p>
+</div>
+    <script>
+        // const tg = document.getElementsByTagName('div')[0]
+        //
+        // console.log(tg.getElementsByTagName('span')[0].innerText)
+        //
+        // tg.getElementsByTagName('span')[0].style.color = 'red'
+        //
+        // tg.onclick = ()=>{
+        //     console.log('start')
+        // }
+
+       //  const div = document.getElementsByTagName('div')
+       //  for (const d of div){
+       //      d.onclick = ()=>{
+       //          console.log(d.innerText)
+       //      }
+       //  }
+       //
+       //
+       //  function test() {
+       //      var arr = []
+       //      for (var i = 0; i < 10; i++) {
+       //          arr[i] = function (){
+       //              console.log(i)
+       //          }
+       //      }
+       //
+       //      return arr
+       //  }
+       //
+       // const arr =  test()
+       //  for (const index of arr){
+       //      index()
+       //  }
+
+    // function myFn(){
+    //     const x = document.getElementsByTagName('input')[0]
+    //     x.value = x.value.toUpperCase()
+    // }
+
+        // document.getElementsByTagName('button')[0].addEventListener('click',()=>{
+        //     document.getElementsByTagName('p')[0].innerText = '点击了'
+        // })
+
+        // document.getElementsByTagName('div')[0].addEventListener('click',()=>{
+        //     alert('div')
+        // },false)
+        //
+        // document.getElementsByTagName('span')[0].addEventListener('click',()=>{
+        //     alert('span')
+        // },false)
+
+        // document.getElementsByTagName('div')[0].appendChild(document.createElement('p').appendChild(document.createTextNode('我是新的')))
+
+        const p = document.getElementsByTagNameNS('p')
+        console.log(p)
+    </script>
+</body>
+</html>
