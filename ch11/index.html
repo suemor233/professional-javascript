@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+
+
+        // const promise = new Promise((resolve, reject) =>{
+        //     fetch('./data.json').then(res=>res.json()).then(data =>{
+        //         resolve(data)
+        //     })
+        // }).then(res=>{
+        //     console.log(res)
+        // })
+
+        Promise.all([new Promise((resolve, reject) =>{
+            fetch('./data.json').then(res=>res.json()).then(data =>{
+                resolve(data)
+            })
+        }),new Promise((resolve, reject) =>{
+            fetch('./data.json').then(res=>res.json()).then(data =>{
+                resolve(data)
+            })
+        })]).then(res=>{
+            console.log(res)
+        })
+
+    </script>
+</body>
+</html>
